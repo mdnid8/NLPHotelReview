@@ -23,3 +23,8 @@ i.e., small_transformed.toarray()
 ### 6.  We can extract the information and put it in a data frame to make it easier to see what has occured
 i.e., my_df = pd.DataFrame(columns=bagofwords.get_feature_names_out(), data=small_transformed.toarray())
  i.e., display(my_df)
+
+### Using a pipeline, combine PCA with a decision tree classifier.
+
+Logistic Regression Accuracy: 0.7277908343125734
+Decision Tree Accuracy: 0.7198589894242068
