@@ -28,3 +28,11 @@ i.e., my_df = pd.DataFrame(columns=bagofwords.get_feature_names_out(), data=smal
 
 Logistic Regression Accuracy: 0.7277908343125734
 Decision Tree Accuracy: 0.7198589894242068
+
+ROC-AUC with no sampling -- 0.8381
+ROC-AUC with SMOTE -- 0.8666
+
+| |recall|precision|f1|
+|-|------|---------|--|
+|**logreg on unsampled data**|73.0%|82.3%|0.77%|
+|**logreg on SMOTE-sampled data**|81.6%|81.2%|0.81%|
