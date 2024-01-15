@@ -1,29 +1,25 @@
 # NLPHotelReview
-
-1. Tokenize the data
-use split to split all the words, i.e. df['Positive'].str.split(' ')
-2. Take the tokenized corpus/file and make document term matrix using the bag of words model  == CountVectorizer()
-
-### 1. Instantiate 
-bagofwords = CountVectorizer()
-
-### 2. Fit 
-i.e.,bagofwords.fit(small_reviews["Review"])
-
-### 3. Transform
-i.e., small_transformed = bagofwords.transform(small_reviews["Review"])
- i.e.,small_transformed
-
-### 4. bagofwords.get_feature_names_out()
-
-
-### 5. converting the sparse matrix into a numpy array
-i.e., small_transformed.toarray()
-
-### 6.  We can extract the information and put it in a data frame to make it easier to see what has occured
-i.e., my_df = pd.DataFrame(columns=bagofwords.get_feature_names_out(), data=small_transformed.toarray())
- i.e., display(my_df)
-
+Table of Contents:
+[1] Introduction
+Overview of the Objective
+[2] Exploratory Data Analysis
+Loading and Understanding the Data
+Basic Statistical Analysis,Data Visualizations, Key Observations for Actionable Insights
+[3] PreProcessing
+Text Data Processing for Modeling
+Splitting Data into Train and Test Sets
+CountVectorizer for Positive and Negative Reviews
+Tokenizer and Text Cleaning Steps
+Merging Numeric Features with Processed Text Data
+[4] Modeling:
+Logistic Regression Model by Analyzing Train and Test Accuracy
+Identying Top 20 Words and Dra Actionable Insights
+[5] In-Depth Model Evaluation:
+Confusion Matrix Analysis
+Model Errors, Precision, and Recall Metrics
+Insights from the Best Performance Model
+[6] Conclusion:
+Summary of Findings and Recommendations
 ### Using a pipeline, combine PCA with a decision tree classifier.
 
 Logistic Regression Accuracy: 0.7277908343125734
