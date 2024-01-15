@@ -36,3 +36,9 @@ ROC-AUC with SMOTE -- 0.8666
 |-|------|---------|--|
 |**logreg on unsampled data**|73.0%|82.3%|0.77%|
 |**logreg on SMOTE-sampled data**|81.6%|81.2%|0.81%|
+
+
+Summary:
+Precision-Recall Area Under the Curve is a metric that measures the area under the precision-recall curve. It provides a summary of a model's performance across various levels of precision and recall.
+the increase in Precision-Recall Area Under the Curve from 0.87 to 0.89 after applying SMOTE suggests an overall improvement in the model's ability to handle class imbalance, resulting in better recall and precision for the minority class. This is a positive outcome, indicating that SMOTE has contributed to the model's effectiveness in predicting instances of the minority class.
+
